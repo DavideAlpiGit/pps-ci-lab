@@ -10,6 +10,6 @@ jobs:
       - uses: actions/setup-java@dd8085240015149ea4caec57ae4488d9b27b8deb
         with:
           distribution: 'temurin'
-          java-version: 15
+          java-version: 17
       - name: Check
         run: ./gradlew check
