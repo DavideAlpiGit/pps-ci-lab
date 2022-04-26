@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/setup-java@dd8085240015149ea4caec57ae4488d9b27b8deb
         with:
+          distribution: zulu
           java-version: 15
       - name: Check
         run: ./gradlew check
