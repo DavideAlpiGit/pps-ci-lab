@@ -4,3 +4,8 @@
 
 !.idea/codeStyles
 !.idea/runConfigurations
+
+.DS_STORE
+*.DS_STORE
+
+build/

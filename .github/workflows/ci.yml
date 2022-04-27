@@ -1,0 +1,16 @@
+name: pps-ci-lab
+on:
+  push: # On every push on any branch
+    branches:
+      - develop
+jobs:
+  Build: # Job name
+    runs-on: ubuntu-latest # Operating system selection
+    steps:
+      - uses: actions/setup-java@dd8085240015149ea4caec57ae4488d9b27b8deb
+        with:
+          distribution: temurin
+          java-version: 11
+      - uses: actions/checkout@v3
+      - name: Check
+        run: ./gradlew check
