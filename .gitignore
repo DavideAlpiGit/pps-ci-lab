@@ -1,3 +1,6 @@
 .gradle/
-*.DS_STORE
-.DS_STORE
+
+.idea/*
+
+!.idea/codeStyles
+!.idea/runConfigurations
