@@ -11,3 +11,4 @@ object Server extends App:
 
   val l = List.Cons(10, List.Cons(20, List.Cons(30, List.Nil())))
   println(List.sum(l)) // 60
+  println(Database.name())
